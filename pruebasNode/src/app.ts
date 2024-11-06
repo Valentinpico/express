@@ -7,3 +7,5 @@ const newUser: UserModel = {
 };
 
 console.log(newUser);
+console.log(newUser);
+console.log(newUser);
