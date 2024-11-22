@@ -1,4 +1,5 @@
 import { UserModel } from "./interfaces/interfaces";
+import { getUserById } from "./services/user.service";
 
 const newUser: UserModel = {
   id: 1,
@@ -6,6 +7,7 @@ const newUser: UserModel = {
   email: "@john.doe",
 };
 
-console.log(newUser);
-console.log(newUser);
-console.log(newUser);
+getUserById({
+  id: 2,
+  callback: (err, user) => console.log(err, user),
+});
